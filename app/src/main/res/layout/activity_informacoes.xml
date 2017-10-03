@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fbv.edu.br.serverall.InformacoesActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:text="Nome : Paulo Bento da Silva"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trabalho como eletricista a 20 anos , passando pelas maiores companhias de rede eletrica como : Celpe E Coelce" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:text="ligue para orçamentos "
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/ligarparatrabalhador"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ligue Aqui"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="10"
+        android:numStars="5"
+        android:id="@+id/informacaoeletricista"/>
+
+
+</LinearLayout>
