@@ -27,6 +27,15 @@ public class EngenheiroActivity extends AppCompatActivity {
                     case 0:
                         newActivity = new Intent(EngenheiroActivity.this, InformacoesActivity.class);
                         startActivity(newActivity);
+                    case 1:
+                        newActivity = new Intent(EngenheiroActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                    case 2:
+                        newActivity = new Intent(EngenheiroActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                    case 3:
+                        newActivity = new Intent(EngenheiroActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
                 }
             }
 

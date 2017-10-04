@@ -35,7 +35,7 @@ public class NavegandoEmOpcoesActivity extends AppCompatActivity {
         visitarfacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.facebook.com/AndroidOfficial/");
+                Uri uri = Uri.parse("https://www.facebook.com/ServerAll-621339924922470/");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
 

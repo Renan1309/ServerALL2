@@ -8,12 +8,8 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:text="Nome : Paulo Bento da Silva"
-        android:textSize="20dp"
-        android:layout_height="wrap_content" />
+
+
 
     <TextView
 
@@ -21,7 +17,7 @@
         android:textSize="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Trabalho como eletricista a 20 anos , passando pelas maiores companhias de rede eletrica como : Celpe E Coelce" />
+        android:text="Trabalho no ramo  a muitos anos , com uma grande bagagem na profissão"/>
 
     <TextView
         android:gravity="center_horizontal"
@@ -35,16 +31,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ligue Aqui"
+        android:text="Ligue Aqui para mais informaçoes e orçamentos"
         />
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:max="10"
-        android:numStars="5"
-        android:id="@+id/informacaoeletricista"/>
+
 
 
 </LinearLayout>

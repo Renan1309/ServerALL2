@@ -27,6 +27,19 @@ public class EncanadorActivity extends AppCompatActivity {
                     case 0:
                         newActivity = new Intent(EncanadorActivity.this, InformacoesActivity.class);
                         startActivity(newActivity);
+                        break;
+                    case 1:
+                        newActivity = new Intent(EncanadorActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 2:
+                        newActivity = new Intent(EncanadorActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 3:
+                        newActivity = new Intent(EncanadorActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                        break;
                 }
             }
 
