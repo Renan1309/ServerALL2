@@ -1,0 +1,35 @@
+package fbv.edu.br.serverall;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class ArquitetoActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_arquiteto);
+        String[] Arquiteto = {"Josias Cunha", "Neto Barbosa", "Gustavo Bueno", "Lucas Romero", "Rogrido Neves"};
+        ListView listaearquitetos = (ListView) findViewById(R.id.Lista_arquiteto);
+        ArrayAdapter<String> adpter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Arquiteto);
+        listaearquitetos.setAdapter(adpter);
+        registerForContextMenu(listaearquitetos);
+        listaearquitetos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent newActivity;
+                switch (position) {
+                    case 0:
+                        newActivity = new Intent(ArquitetoActivity.this, InformacoesActivity.class);
+                        startActivity(newActivity);
+                }
+            }
+
+        });
+    }
+}

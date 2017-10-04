@@ -38,6 +38,36 @@ public class Lista_ServicosActivity extends AppCompatActivity {
                     case 0:
                         newActivity = new Intent(Lista_ServicosActivity.this, EletricistaActivity.class);
                         startActivity(newActivity);
+                        break;
+
+                    case 1:
+                        newActivity = new Intent(Lista_ServicosActivity.this, Pedreiro_Activity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 2:
+                        newActivity = new Intent(Lista_ServicosActivity.this, PintorActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 3:
+                        newActivity = new Intent(Lista_ServicosActivity.this, EncanadorActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 4:
+                        newActivity = new Intent(Lista_ServicosActivity.this, ArquitetoActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 5:
+                        newActivity = new Intent(Lista_ServicosActivity.this, EngenheiroActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 6:
+                        newActivity = new Intent(Lista_ServicosActivity.this, MacineiroActivity.class);
+                        startActivity(newActivity);
+                        break;
+                    case 7:
+                        newActivity = new Intent(Lista_ServicosActivity.this, SerralheiroActivity.class);
+                        startActivity(newActivity);
+                        break;
                 }
             }
         });

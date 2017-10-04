@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".InformacoesActivity" />
-        <activity android:name=".Trabalhar_AllActivity"></activity>
+        <activity android:name=".Trabalhar_AllActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -33,6 +33,14 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
+        <activity android:name=".Pedreiro_Activity" />
+        <activity android:name=".PintorActivity" />
+        <activity android:name=".EncanadorActivity" />
+        <activity android:name=".ArquitetoActivity" />
+        <activity android:name=".EngenheiroActivity" />
+        <activity android:name=".MacineiroActivity" />
+        <activity android:name=".SerralheiroActivity"></activity>
     </application>
 
 </manifest>

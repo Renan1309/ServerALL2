@@ -33,11 +33,13 @@ public class EletricistaActivity extends AppCompatActivity {
                     case 0:
                         newActivity = new Intent(EletricistaActivity.this, InformacoesActivity.class);
                         startActivity(newActivity);
+
                 }
             }
 
         });
     }
+
 }
 
 
