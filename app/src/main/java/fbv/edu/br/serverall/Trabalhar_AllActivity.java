@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
@@ -16,14 +15,19 @@ import android.widget.Toast;
 
 import java.io.File;
 
+import fbv.edu.br.serverall.DAO.TrabalhadorDAO;
+import fbv.edu.br.serverall.modelo.Trablhador;
+
 public class Trabalhar_AllActivity extends AppCompatActivity {
 
     private String caminhoFoto;
+    private FormularioDados  dados;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trabalhar__all);
+        dados = new FormularioDados(this);
         Button botaoFoto = (Button) findViewById(R.id.formulario_botao_foto);
         botaoFoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +51,13 @@ public class Trabalhar_AllActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(Trabalhar_AllActivity.this, "Dados Enviado", Toast.LENGTH_SHORT).show();
+                Trablhador trabalhadores = dados.pegarTrabalhador();
+                TrabalhadorDAO dao = new TrabalhadorDAO(Trabalhar_AllActivity.this);
+
+                dao.insere(trabalhadores);
+                dao.close();
+
+                Toast.makeText(Trabalhar_AllActivity.this, "Trabalhador : " + trabalhadores.getNome() +" Salvo !", Toast.LENGTH_SHORT).show();
                 finish();
 
             }

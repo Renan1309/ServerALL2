@@ -7,10 +7,6 @@
     tools:context="fbv.edu.br.serverall.InformacoesActivity"
     android:orientation="vertical">
 
-
-
-
-
     <TextView
 
         android:id="@+id/textView2"

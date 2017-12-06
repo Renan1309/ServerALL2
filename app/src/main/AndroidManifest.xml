@@ -3,6 +3,8 @@
     package="fbv.edu.br.serverall">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
@@ -41,6 +43,12 @@
         <activity android:name=".EngenheiroActivity" />
         <activity android:name=".MacineiroActivity" />
         <activity android:name=".SerralheiroActivity"></activity>
+
+        <receiver android:name=".receiver.SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
