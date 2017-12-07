@@ -113,19 +113,7 @@ public class Lista_ServicosActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_enviar_trabalhador:
 
-                TrabalhadorDAO dao = new TrabalhadorDAO(this);
-                List<Trablhador> trabalhadores = dao.buscartrabalhadores();
-                dao.close();
-
-                TrabalhadorConverter conversor = new TrabalhadorConverter();
-                String json = conversor.converteParaJSON(trabalhadores);
-
-
-
-                WebClient client = new WebClient();
-                String resposta = client.post(json);
-                Toast.makeText(this, resposta, Toast.LENGTH_LONG).show();
-                Toast.makeText(this, "Enviando Trabalhador...", Toast.LENGTH_LONG).show();
+               new EnviarTrabalhadoresTask(this).execute();
                 break;
         }
         return super.onOptionsItemSelected(item);
